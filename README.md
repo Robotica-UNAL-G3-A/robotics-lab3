@@ -6,6 +6,7 @@ The version of software used is:
 - Ubuntu 2020.4 
 - MATLAB 2023a
 
+## How to use it?
 Testing the installation by running `roscore` and in a second terminal
 
 ```bash
@@ -18,6 +19,7 @@ and in a third
 rosrun turtlesim turtle_teleop_key 
 ```
 
+## Results
 ![turtlesim](./media/turtlesim.png)
 
 ## Create package
@@ -45,6 +47,8 @@ roslaunch robotics-lab3 mylaunch.launch
 ```
 
 rosnode  info turtle_teleop_key
+
+## Conclusions 
 
 ## Contributors
 - [Juan Sebastian Duenas](https://github.com/jsduenass) (jsduenass@unal.edu.co)
