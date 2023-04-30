@@ -2,6 +2,10 @@
  
   <!-- Turtlesim Node-->
   <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
-
   <node pkg="robotics-lab3" type="turtle_teleop_key_custom" name="teleop" output="screen"/>
+  
+  <!--
+  <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+  <node pkg="robotics-lab3" type="turtle_teleop_key_custom" name="teleop" output="screen"/>
+  -->
 </launch>

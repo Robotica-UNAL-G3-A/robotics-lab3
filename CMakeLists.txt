@@ -205,3 +205,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+add_executable(TeleopTurtle src/teleop_turtle_key_custom.cpp)
+target_link_libraries(TeleopTurtle ${catkin_LIBRARIES})
+#add_dependencies(talker beginner_tutorials_generate_messages_cpp)
