@@ -1,6 +1,7 @@
 import rospy
 from geometry_msgs.msg import Twist
 from turtlesim.srv import TeleportAbsolute, TeleportRelative
+from turtlesim.srv import TeleportAbsolute
 
 import termios, sys, os, tty
 from numpy import pi
@@ -51,12 +52,17 @@ def volver_centro():
 
 # Función para girar la tortuga 180 grados
 def girar_180():
-    rospy.wait_for_service('/turtle1/teleport_relative')
-    try:
-        teleport_relative = rospy.ServiceProxy('/turtle1/teleport_relative', TeleportRelative)
-        teleport_relative(0, 0, pi)
-    except rospy.ServiceException as e:
-        print("Service call failed: ", e)
+    print("dentro de nuevo  ")
+    msg = Twist()
+    msg.linear.x = 0
+    msg.angular.z = pi
+    pub.publish(msg)
+    #rospy.wait_for_service('/turtle1/teleport_relative')
+    #try:
+    #    teleport_relative = rospy.ServiceProxy('/turtle1/teleport_relative', TeleportRelative)
+    #    teleport_relative(0, 0, pi)
+    #except rospy.ServiceException as e:
+    #    print("Service call failed: ", e)
 
 # Configuración de la tecla de salida del programa
 def setup_terminal():
@@ -92,6 +98,13 @@ if __name__ == '__main__':
             # Girar en sentido horario con la tecla 'd'
             elif key == 100:
                 girar_horario()
-            # Girar en sentido antihorario con
+            # Girar en sentido antihorario con la tecla 'a'
+            elif key == 97:
+                girar_antihorario()
+            # Girar 180°
+            elif key == 114:
+                girar_180()
+            elif key == 32:
+                volver_centro()
     except: 
         print("Error")
