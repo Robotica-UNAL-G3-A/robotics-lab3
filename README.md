@@ -51,7 +51,7 @@ roslaunch robotics-lab3 mylaunch.launch
 rosnode  info turtle_teleop_key
 
 ## Conclusions 
-
+In this lab we explored a powerful tool called ros that allows us to run different parallel processes with different programs and connect between them, its modular structure allows us to make changes in some of them without affecting the others, the use of ros allowed us to modify, in this particular case, the control of a program without altering its code, which opens a large window of opportunities when controlling processes.
 ## Contributors
 - [Juan Sebastian Duenas](https://github.com/jsduenass) (jsduenass@unal.edu.co)
 - [German Andres Urbina Gutierrez](https://github.com/gurbinaUn)  (gurbina@unal.edu.co)
