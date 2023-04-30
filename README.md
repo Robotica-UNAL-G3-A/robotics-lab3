@@ -23,7 +23,8 @@ rosrun turtlesim turtle_teleop_key
 ![turtlesim](./media/turtlesim.png)
 
 ## Analysis results 
-
+The program created has the function to manage the topics in order to edit the pose and the orientation of the turtle. And, as turtlesim is subscribe to this topics we get the turtle move.
+We write in console the key and with this we can verify the correcto function of the program. 
 ## Create package
 After [seting up the catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) . We create a basic ROS package
 
