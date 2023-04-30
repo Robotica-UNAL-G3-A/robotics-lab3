@@ -8,11 +8,15 @@
  #else
  # include <windows.h>
  #endif
- 
- #define KEYCODE_RIGHT 0x43
- #define KEYCODE_LEFT 0x44
- #define KEYCODE_UP 0x41
- #define KEYCODE_DOWN 0x42
+ // change value AWSD
+ // a ->  	65
+ // d -> 68
+ // w -> 87
+ // s -> 83 
+ #define KEYCODE_RIGHT 0x68
+ #define KEYCODE_LEFT 0x65
+ #define KEYCODE_UP 0x87
+ #define KEYCODE_DOWN 0x83
  #define KEYCODE_B 0x62
  #define KEYCODE_C 0x63
  #define KEYCODE_D 0x64
